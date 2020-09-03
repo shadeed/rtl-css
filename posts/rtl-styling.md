@@ -125,7 +125,7 @@ When `dir="rtl` is set on the element, the title is much clearer. That is, the s
 ## Handling Fonts
 Based on the design for both LTR and RTL layouts, there should be a specific font for each direction. Some fonts can work for multiple languages, which are great. However, brands and businesses tend to use a different font for RTL.
 
-To account for that, we should define a different font in the font settings of your project. See [Automation Tools](./#automation-tools) for more details.
+To account for that, we should define a different font in the font settings of your project. See [Automation Tools](#automation-tools) for more details.
 
 ## Font Family
 In CSS, `font-family` works in a way that makes it easy to fall back to another font, in case a font didn't load. However, it turned out that if specific glyphs are not supported by the first font in the declaration, it will try to use the second font.
@@ -348,7 +348,7 @@ The dots highlighted in blue overlap with the underline. This is not good, and i
 ~~It’s possible to change the underline’s style and color with the new `text-decoration-style` and `text-decoration-color` properties. However, it is not guaranteed to work with all typefaces and font sizes. At the time of writing, Firefox is the browser that has the best support for these properties.~~
 
 **Update: 18 Jan 2020**
-Based on [this](https://github.com/shadeed/rtl-styling/issues/4) issue on Github, it turned out that using `text-decoration-skip-ink` property can solve the issue of dots overlapping with the underline. The default value for it is `skip`.
+Based on [this](https://github.com/shadeed/rtl-styling/issues/4) issue on Github, it turned out that using `text-decoration-skip-ink` property can solve the issue of dots overlapping with the underline. The default value for it is `auto`.
 
 <p class="codepen" data-height="214" data-theme-id="light" data-default-tab="result" data-user="shadeed" data-slug-hash="9f8c134e0d4fe1f0d58ba3c23cb96e41" style="height: 214px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RTL Styling - Text Decoration">
   <span>See the Pen <a href="https://codepen.io/shadeed/pen/9f8c134e0d4fe1f0d58ba3c23cb96e41">
